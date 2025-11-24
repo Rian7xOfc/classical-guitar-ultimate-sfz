@@ -1,0 +1,645 @@
+// Are You Classical Guitar Ultimate Release
+
+<control>
+label_cc20="MODO" label_cc7="Vol" label_cc10="Pan"
+label_cc21="Reverb" label_cc22="Delay" label_cc23="Drive"
+label_cc24="Tone" label_cc30="Res" label_cc80="PB Range"
+set_cc20=24 set_cc7=100 set_cc10=64
+set_cc24=127 set_cc30=0
+
+<global>
+sw_lokey=24 sw_hikey=33 sw_default=24
+sw_cc20=yes sw_step20=12
+amplitude_oncc7=100 pan_oncc10=100
+pbrange=2 pbrange_oncc80=10
+sustain_cc=64
+offset_random=200 pitch_random=3
+ampeg_attack=0.005 ampeg_vel2attack=-0.005
+ampeg_release=0.05 ampeg_release_oncc26=2.0
+ampeg_sustain=100
+fil_type=lpf_2p cutoff=120 cutoff_oncc24=20000
+resonance=0 resonance_oncc30=24
+eq1_freq=100 eq1_gain=0 eq1_gain_oncc79=4 eq1_bw=1.0
+eq2_freq=800 eq2_gain=0 eq2_gain_oncc79=-4 eq2_bw=2.0
+eq3_freq=5000 eq3_gain=0 eq3_gain_oncc79=6 eq3_bw=1.0
+bus1_effect=reverb bus1_effect_mix=0 bus1_effect_mix_oncc21=100
+bus2_effect=delay bus2_effect_mix=0 bus2_effect_mix_oncc22=100 bus2_effect_time=0.38
+bus3_effect=distortion bus3_effect_mix=0 bus3_effect_mix_oncc23=100 bus3_effect_drive=24
+bus4_effect=chorus bus4_effect_mix=0 bus4_effect_mix_oncc29=100 bus4_effect_width=80
+effect1=100
+
+<group> trigger=attack bus1_effect_mix=0 bus2_effect_mix=0 bus3_effect_mix=0 bus4_effect_mix=0
+
+// === CLEAN CLASSIC ===
+<group>
+sw_last=24 sw_label="CLEAN CLASSIC"
+cutoff=16000 resonance=0 ampeg_release=0.3 eq1_gain=2 eq3_gain=0 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === PALM MUTE ===
+<group>
+sw_last=25 sw_label="PALM MUTE"
+fil_type=lpf_2p cutoff=900 resonance=10 ampeg_decay=0.15 ampeg_release=0.05 volume=14
+loop_mode=one_shot
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === SOLO SUSTAIN ===
+<group>
+sw_last=26 sw_label="SOLO SUSTAIN"
+cutoff=20000 ampeg_release=0.8 ampeg_sustain=100 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === DUB ECHO ===
+<group>
+sw_last=27 sw_label="DUB ECHO"
+cutoff=15000 bus4_effect_mix=30 bus2_effect_mix=60 bus2_effect_time=0.4 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === DRIVE LEAD ===
+<group>
+sw_last=28 sw_label="DRIVE LEAD"
+effect3_level=100 bus3_effect_mix=100 ampeg_release=0.5 volume=2
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === SLIDE NYLON ===
+<group>
+sw_last=29 sw_label="SLIDE NYLON"
+pbrange=12 ampeg_release=1.2 ampeg_sustain=100 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === TRAP DARK ===
+<group>
+sw_last=30 sw_label="TRAP DARK"
+cutoff=8000 ampeg_attack=0.05 ampeg_release=1.5 bus1_effect_mix=60 bus2_effect_mix=50 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === REGGAE ROOTS ===
+<group>
+sw_last=31 sw_label="REGGAE ROOTS"
+cutoff=12000 ampeg_release=0.1 eq2_gain=3 eq1_gain=-2 volume=2
+loop_mode=one_shot
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === FUNK CARIOCA ===
+<group>
+sw_last=32 sw_label="FUNK CARIOCA"
+cutoff=20000 ampeg_attack=0.001 eq1_gain=-6 eq3_gain=4 volume=1
+loop_mode=one_shot
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
+// === BOSSA NOVA ===
+<group>
+sw_last=33 sw_label="BOSSA NOVA"
+cutoff=5000 ampeg_attack=0.02 eq1_gain=3 eq3_gain=-4 bus1_effect_mix=20 volume=1
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=34 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=71 lovel=1 hivel=127
+
+<region> sample=C5.wav key=72 pitch_keycenter=72
+lokey=72 hikey=73 lovel=1 hivel=127
+
+<region> sample=D5.wav key=74 pitch_keycenter=74
+lokey=73 hikey=75 lovel=1 hivel=127
+
+<region> sample=E5.wav key=76 pitch_keycenter=76
+lokey=75 hikey=76 lovel=1 hivel=127
+
+<region> sample=F5.wav key=77 pitch_keycenter=77
+lokey=77 hikey=78 lovel=1 hivel=127
+
+<region> sample=G5.wav key=79 pitch_keycenter=79
+lokey=78 hikey=80 lovel=1 hivel=127
+
+<region> sample=A5.wav key=81 pitch_keycenter=81
+lokey=80 hikey=82 lovel=1 hivel=127
+
+<region> sample=B5.wav key=83 pitch_keycenter=83
+lokey=82 hikey=96 lovel=1 hivel=127
+
